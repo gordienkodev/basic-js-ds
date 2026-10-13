@@ -1,5 +1,4 @@
-const { NotImplementedError } = require('../extensions/index.js');
-
+const { NotImplementedError } = require('../lib');
 // const { ListNode } = require('../extensions/list-node.js');
 
 /**
@@ -22,6 +21,7 @@ const { NotImplementedError } = require('../extensions/index.js');
  *   }
  * }
  */
+
 function removeKFromList(list, valueToRemove) {
   let head = list;
   let previousNode = null;
@@ -47,6 +47,7 @@ function removeKFromList(list, valueToRemove) {
   }
 
   return head;
+
 }
 
 module.exports = {

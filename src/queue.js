@@ -1,5 +1,4 @@
-const { NotImplementedError } = require('../extensions/index.js');
-
+const { NotImplementedError } = require('../lib');
 // const { ListNode } = require('../extensions/list-node.js');
 
 /**
@@ -13,6 +12,7 @@ const { NotImplementedError } = require('../extensions/index.js');
  * queue.dequeue(); // returns the top element from queue and deletes it, returns 1
  * queue.getUnderlyingList() // returns { value: 3, next: null }
  */
+
 
 class Queue {
   constructor() {
@@ -49,6 +49,7 @@ class Queue {
     }
 
     return removedValue;
+
   }
 }
 
